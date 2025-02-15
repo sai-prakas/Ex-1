@@ -4,11 +4,9 @@ import static org.junit.Assert.*;
 public class MainTest {
     
     @Test
-    public void testAddition() {
-        int num1 = 10;
-        int num2 = 20;
-        int expectedSum = 30;
-
-        assertEquals(expectedSum, num1 + num2);
+    public void testMultiplication() {
+        assertEquals(20, Main.multiply(5, 4));
+        assertEquals(0, Main.multiply(5, 0));
+        assertEquals(-15, Main.multiply(-3, 5));
     }
 }
